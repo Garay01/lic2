@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AirNet</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main>
+    <section>
+      <!--       <div class="title">
+        <h2>Conversor de Temperatura</h2>
+        <div class="toggle">
+          <strong>Estilo Columna</strong>
+          <label class="container">
+              <input type="checkbox" name="" id="toggle" />
+              <span></span>
+              <i class="indicator"></i>
+            </label>
+        </div>
+      </div> -->
+      <div class="container">
+        <div class="row">
+          <form id="form" class="form">
+            <h1>Nuevo Viaje - AirNet</h1>
+            <div id="errors" class='errors'>
+
+            </div>
+            <div class="wrap">
+              <h3>Ingrese sus datos</h3>
+              <div class="d-flex justify-content-between flex-wrap">
+                <span class="form-input">
+                <input type="text" id="name" name="nombre" placeholder="Nombre Completo"/>
+              </span>
+                <div class="form-input">
+                  <div class="select">
+                    <select>
+                      <option value="Hombre">Hombre</option>
+                      <option value="Mujer">Mujer</option>
+                      <option value="Otro">Otro</option>
+                    </select>
+                  </div>
+                </div>
+                <span class="form-input">
+                <input type="number" name="edad" placeholder="Edad"/>
+              </span>
+                <span class="form-input">
+                <input type="text" name="direccion" placeholder="Dirección"/>
+              </span>
+                <span class="form-input">
+                <input type="text" name="dui" placeholder="DUI"/>
+              </span>
+                <span class="form-input">
+                <input type="text" name="pasaporte" placeholder="Pasaporte"/>
+              </span>
+                <span class="form-input">
+                <input type="text" name="correo" placeholder="Correo Electrónico"/>
+              </span>
+              </div>
+              <h3>Forma de Pago</h3>
+              <div class="d-flex justify-content-between flex-wrap">
+                <div class="form-input">
+                  <div class="select">
+                    <select name="metodo">
+                      <option value="Efectivo">Efectivo</option>
+                      <option value="Tarjeta de Crédito">Tarjeta de Crédito</option>
+                      <option value="Tarjeta de Débito">Tarjeta de Débito</option>
+                      <option value="Bitcoin">Bitcoin</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <h3>Datos del vuelo</h3>
+              <div class="d-flex justify-content-between flex-wrap">
+                <div class="form-input" style="width: 100%;">
+                  <label style="color: #d0d0d0; font-size: .9em;">País de destino</label>
+                  <div class="select">
+                    <select id="dest" name="destino">
+                <option value="Australia,860">Australia</option>
+        <option value="Asgard,50000">Asgard</option>
+        <option value="Brasil,300">Brasil</option>
+        <option value="Burm,100">Burma</option>
+        <option value="Burundi,500">Burundi</option>
+        <option value="China,600">China</option>
+        <option value="Congo,600">Congo</option>
+        <option value="Dominican Republic,300">Dominican Republic</option>
+        <option value="England,700">England</option>
+        <option value="El Salvador,0">El Salvador</option>
+        <option value="Ethiopia,400 ">Ethiopia</option>
+        <option value="India,700">India</option>
+        <option value="Iraq,800">Iraq</option>
+        <option value="Italy,700">Italy</option>
+        <option value="Japan,900">Japan</option>
+        <option value="Russia,1000">Russia</option>
+        <option value="Somalia,500">Somalia</option>
+        <option value="Syria,700">Syria</option>
+        <option value="United States,650">United States</option>
+        <option value="Yemen,700">Yemen</option>
+        <option value="Wakanda,10000">Wakanda</option></select>
+                  </div>
+                </div>
+                <div class="form-input">
+                  <label style="color: #d0d0d0; font-size: .9em;">Fecha Inicio</label>
+                  <input type="date" name="inicio" id="" />
+                </div>
+                <div class="form-input">
+                  <label style="color: #d0d0d0; font-size: .9em;">Fecha Final</label>
+                  <input type="date" name="fin" id="" />
+                </div>
+                <div class="form-input">
+                  <label style="color: #d0d0d0; font-size: .9em;">Monto Final:</label>
+                  <span id="value" class="text-white"></span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex pt-5">
+              <input type="button" class="form-button" value="Limpiar">
+              <input type="button" id="errBtn" class="form-button d-none" style="color: #ef476f;" value="Limpiar Errores">
+              <input type="submit" class="form-button" value="Finalizar">
+            </div>
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        </form>
+        <a class="youtube-link" href="https://youtu.be/ucd1XH-fluE" target="_blank">https://youtu.be/ucd1XH-fluE</a>
+      </div>
+    </section>
+  </main>
+</body>
+<!--   <script>
+    const wraps = document.getElementsByClassName("wrap");
+    document.getElementById("toggle").addEventListener("change", (e) => {
+      if (e.target.checked) {
+        wraps[0].style.display = "none";
+        wraps[1].style.display = "flex";
+      } else {
+        wraps[0].style.display = "flex";
+        wraps[1].style.display = "none";
+      }
+    })script> -->
+<script src="./js/index.js"></script>
+
+</html>
